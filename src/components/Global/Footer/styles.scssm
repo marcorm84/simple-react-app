@@ -1,0 +1,7 @@
+@import "~sass/utils/index";
+
+.footer {
+    padding: 20px;
+    color: white;
+    background-color: $dark;
+}

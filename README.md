@@ -53,3 +53,4 @@ These are the tasks included in the template. I'll just list them with a brief d
 ## So, anything else ?
 
 Not really. I'd just want to thank you for giving it a try or at least reading through. If you have any feedback it'd be greatly appreciated. I bet a lot of things could be improved and I'm open to discussion, so open an issue, send a pull request or message me to gianluca.prwlr@gmail.com.
+# simple-react-app
