@@ -1,0 +1,15 @@
+@import "~sass/utils/index";
+
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: $wrapper-width-mobile;
+  padding: 25px;
+  padding-top: 110px;
+}

@@ -21,7 +21,7 @@ class App extends PureComponent {
     const { children } = this.props;
 
     return (
-      <div className="App">
+      <div>
         <Helmet>
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />

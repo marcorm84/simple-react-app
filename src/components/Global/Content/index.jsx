@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import './styles.scssm';
+import "./styles.scssm";
 
 class Content extends Component {
   static propTypes = {
@@ -11,11 +11,7 @@ class Content extends Component {
   render() {
     const { body } = this.props;
 
-    return (
-      <div styleName="content">
-        {body}
-      </div>
-    );
+    return <div styleName="content">{body}</div>;
   }
 }
 

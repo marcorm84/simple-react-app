@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import logo from "assets/images/react-logo.png";
+import menu from "assets/images/menu-icon.png";
 
 import "./styles.scssm";
 
@@ -16,21 +17,26 @@ class Header extends Component {
     const { title, items } = this.props;
 
     return (
-      <div styleName="header">
-        <div styleName="logo">
-          <img src={logo} alt="logo" />
-          <h2>{title}</h2>
-
-          <ul styleName="menu">
-            {items &&
-              items.map((item, key) => (
-                <li key={key}>
-                  <Link to={item.url}>{item.title}</Link>
-                </li>
-              ))}
-          </ul>
+      <header styleName="header">
+        <div styleName="wrapper">
+          <a styleName="logo" href="/">
+            <img src={logo} alt="logo" />
+          </a>
+          <nav>
+            <a href="#" styleName="menu-icon">
+              <img src={menu} alt="logo" />
+            </a>
+            <ul>
+              {items &&
+                items.map((item, key) => (
+                  <li key={key}>
+                    <Link to={item.url}>{item.title}</Link>
+                  </li>
+                ))}
+            </ul>
+          </nav>
         </div>
-      </div>
+      </header>
     );
   }
 }
