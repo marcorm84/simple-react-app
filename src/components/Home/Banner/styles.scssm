@@ -4,12 +4,42 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: $white;
+  height: 400px;
+
+  @include desktop {
+    height: 700px;
+  }
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: inherit;
 }
 
 .wrapper {
   margin: auto;
   max-width: $wrapper-width-mobile;
   padding: 25px;
-  padding-top: 110px;
+  padding-top: 70px;
+  text-align: center;
+
+  @include desktop {
+    max-width: $wrapper-width-desktop;
+    padding: 70px;
+    padding-top: 200px;
+    position: relative;
+  }
+}
+
+.title {
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text {
+  margin-top: 20px;
+  display: block;
 }

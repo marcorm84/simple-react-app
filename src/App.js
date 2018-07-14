@@ -30,7 +30,6 @@ class App extends PureComponent {
           <title>{title}</title>
         </Helmet>
         <Header
-          title="Codejobs"
           items={items}
         />
         <Content body={children} />
