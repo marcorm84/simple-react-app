@@ -1,5 +1,6 @@
 import React from "react";
 import bannerBackground from "assets/images/banner2.jpg";
+import arrow from "assets/images/down-arrow.png";
 import "./styles.scssm";
 
 const Banner = () => (
@@ -18,6 +19,9 @@ const Banner = () => (
           Maecenas at tempus diam.
         </span>
       </div>
+      <a href="#first" styleName="arrow">
+        <img src={arrow} alt="arrow" />
+      </a>
     </div>
   </div>
 );

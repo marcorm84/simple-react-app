@@ -1,0 +1,58 @@
+@import "~sass/utils/index";
+
+.page-404 {
+  text-align: center;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: $wrapper-width-mobile;
+  padding: 25px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: $wrapper-width-desktop;
+    padding: 70px;
+    position: relative;
+  }
+}
+
+.column {
+  @include desktop {
+    position: relative;
+    width: 35%;
+  }
+}
+
+.line {
+  display: block;
+  font-size: 18px;
+
+  &.is-bold {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+.text {
+  margin-bottom: 10px;
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.title {
+  color: $blue;
+  margin: auto;
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin: 0;
+    margin-bottom: 35px;
+    margin-top: 70px;
+    text-align: left;
+  }
+}

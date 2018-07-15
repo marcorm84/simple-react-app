@@ -1,13 +1,13 @@
 import React, { PureComponent } from "react";
 import "./styles.scssm";
 
-class About extends PureComponent {
+class First extends PureComponent {
   render() {
     return (
-      <div id="about" styleName="about">
+      <div id="first" styleName="first">
         <div styleName="wrapper">
           <div styleName="title">
-            <span styleName="line is-bold">About Us</span>
+            <span styleName="line is-bold">First Section</span>
           </div>
           <div styleName="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel
@@ -22,4 +22,4 @@ class About extends PureComponent {
   }
 }
 
-export default About;
+export default First;

@@ -1,12 +1,13 @@
 import React, { PureComponent } from "react";
 import Banner from "components/Home/Banner";
+import First from "components/Home/First";
 
 class Home extends PureComponent {
   render() {
     return (
       <div>
         <Banner />
-        <h1>Home Page</h1>
+        <First />
       </div>
     );
   }

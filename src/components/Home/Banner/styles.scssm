@@ -7,6 +7,7 @@
   background-attachment: fixed;
   color: $white;
   height: 400px;
+  position: relative;
 
   @include desktop {
     height: 700px;
@@ -42,4 +43,18 @@
 .text {
   margin-top: 20px;
   display: block;
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+  width: 40px;
+
+  @include desktop {
+    bottom: 50px;
+    width: 50px;
+  }
 }

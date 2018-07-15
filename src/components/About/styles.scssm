@@ -1,0 +1,50 @@
+@import "~sass/utils/index";
+
+.about {
+  text-align: center;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: $wrapper-width-mobile;
+  padding: 25px;
+  padding-top: 70px;
+  text-align: center;
+
+  @include desktop {
+    max-width: $wrapper-width-desktop;
+    padding: 70px;
+    position: relative;
+  }
+}
+
+.line {
+  display: block;
+  font-size: 18px;
+
+  &.is-bold {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+.text {
+  margin-bottom: 10px;
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.title {
+  color: $blue;
+  margin: auto;
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin: 0;
+    margin-bottom: 35px;
+    margin-top: 70px;
+    text-align: left;
+  }
+}
