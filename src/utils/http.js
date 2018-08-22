@@ -3,8 +3,7 @@ import { API_HEADERS } from '../constants/config.js';
 const http = {
   get: (url, include_token=true)=>{
     return fetch(url, {
-      method: 'GET',
-      headers: API_HEADERS,
+      method: 'GET'
     }).then((response)=>{
       if(response.ok){
         return response.json();
@@ -18,7 +17,6 @@ const http = {
   put: (url, data = {}, include_token=true)=>{
     return fetch(url,{
       method: 'PUT',
-      headers: API_HEADERS,
       body: JSON.stringify(data),
     }).then((response)=>{
       if(response.ok){
@@ -33,7 +31,6 @@ const http = {
   post: (url, data, include_token=true)=>{
     return fetch(url, {
       method: 'POST',
-      headers: API_HEADERS,
       body: JSON.stringify(data),
     }).then((response)=>{
       if(response.ok){
@@ -48,7 +45,6 @@ const http = {
   delete: (url, include_token=true)=>{
     return fetch(url, {
       method: 'DELETE',
-      headers: API_HEADERS,
     }).then((response)=>{
       if(response.ok){
         return response.json();
