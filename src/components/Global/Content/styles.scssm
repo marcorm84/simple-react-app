@@ -1,5 +1,6 @@
 @import "~sass/utils/index";
 
 .content {
-	margin-top: 76px;
+  padding-top: 76px;
+  padding-bottom: 64px;
 }
